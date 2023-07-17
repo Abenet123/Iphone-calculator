@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="display"><input type="text" id="screen" placeholder="0" ></div>
+            <div class="operators">
+                <div class="first">
+                    <button onclick="clearAll('AC')">AC</button>
+                    <button onclick="numPush('(-')">+/-</button>
+                    <button onclick="numPush('%')">%</button>
+                    <button id="ops" onclick="numPush('/')"><i class="fa-solid fa-divide" style="color: #fff;"></i></button>
+                </div>
+                 <div class="second">
+                    <button  onclick="numPush('7')">7</button>
+                    <button  onclick="numPush('8')">8</button>
+                    <button  onclick="numPush('9')">9</button>
+                    <button id="ops"onclick="numPush('*')" ><i class="fa-sharp fa-solid fa-xmark fa-lg" style="color: #fff;"></i> </button>
+                 </div> 
+                <div class="third">
+                    <button  onclick="numPush('4')">4</button>
+                    <button  onclick="numPush('5')">5</button>
+                    <button  onclick="numPush('6')">6</button>
+                    <button id="ops" onclick="numPush('-')"><i class="fa-sharp fa-solid fa-minus" style="color: #fff;"></i></button>
+                </div>
+                <div class="forth">
+                    <button onclick="numPush('1')">1</button>
+                    <button onclick="numPush('2')">2</button>
+                    <button onclick="numPush('3')">3</button>
+                    <button id="ops" onclick="numPush('+')"><i class="fa-solid fa-plus" style="color: #fff;"></i></button>
+                </div>
+                <div class="fifth">
+                <button id="zero" onclick="numPush('0')">0</button>
+                <button id="point" onclick="numPush('.')">.</button>
+                <button id="equal" onclick="equal('=')"><i class="fa-solid fa-equals" style="color: #ffffff;"></i></button>
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
